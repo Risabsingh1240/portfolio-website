@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Risab Singh — BCA Student & Aspiring Software Developer. Portfolio showcasing Java, Web Development projects." />
+  <title>Risab Kumar | Software Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Risab<span class="logo-slash">/</span><span class="logo-bracket">&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for Internship
+        </div>
+        <h1 class="hero-name">
+          <span class="name-hi">Hi, I'm</span>
+          <span class="name-main">Risab Kumar</span>
+        </h1>
+        <div class="hero-typewriter">
+          <span class="tw-static">I build </span>
+          <span class="tw-dynamic" id="typewriter"></span>
+          <span class="tw-cursor">|</span>
+        </div>
+        <p class="hero-desc">
+          BCA student passionate about crafting clean, functional software.
+          Turning ideas into real applications — one commit at a time.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            View Projects
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">4+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">7+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">2028</span>
+            <span class="stat-label">Graduating</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="profile-ring">
+          <div class="profile-img-wrap">
+           <img src="Risab.jpeg" alt="Risab Kumar" 
+style="width:100%;height:100%;
+object-fit:cover;border-radius:50%;" />
+          </div>
+          <svg class="ring-svg" viewBox="0 0 300 300">
+            <circle cx="150" cy="150" r="140" stroke="url(#ringGrad)" stroke-width="1.5" fill="none" stroke-dasharray="6 4"/>
+            <defs>
+              <linearGradient id="ringGrad" x1="0" y1="0" x2="300" y2="300" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#a855f7" stop-opacity="0.8"/>
+                <stop offset="50%" stop-color="#6366f1" stop-opacity="0.3"/>
+                <stop offset="100%" stop-color="#a855f7" stop-opacity="0.8"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="floating-card card-java">
+          <span class="fc-icon">☕</span>
+          <span class="fc-text">Java Developer</span>
+        </div>
+        <div class="floating-card card-web">
+          <span class="fc-icon">🌐</span>
+          <span class="fc-text">Web Dev</span>
+        </div>
+        <div class="floating-card card-open">
+          <span class="fc-icon">🚀</span>
+          <span class="fc-text">Open Source</span>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint">
+      <span>Scroll Down</span>
+      <div class="scroll-arrow"></div>
+    </a>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       ABOUT
+  ══════════════════════════════════════════ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Get to Know Me</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-intro">
+            I'm <strong>Risab kumar</strong>, a passionate BCA student from India with a deep interest in Software Development and Web Engineering. I believe every great product starts with clean code and thoughtful design.
+          </p>
+          <p>
+            Currently, I'm sharpening my skills in Java, Object-Oriented Programming, Data Structures & Algorithms, and full-stack web development. I love building projects that solve real problems and contribute to open source.
+          </p>
+          <p>
+            My goal is to secure an internship where I can apply my knowledge, collaborate with experienced developers, and grow into a professional software engineer.
+          </p>
+          <div class="about-details">
+            <div class="detail-item">
+              <span class="detail-icon">🎓</span>
+              <div>
+                <span class="detail-label">Degree</span>
+                <span class="detail-value">Bachelor of Computer Applications</span>
+              </div>
+            </div>
+            <div class="detail-item">
+              <span class="detail-icon">📍</span>
+              <div>
+                <span class="detail-label">Location</span>
+                <span class="detail-value">India</span>
+              </div>
+            </div>
+            <div class="detail-item">
+              <span class="detail-icon">💼</span>
+              <div>
+                <span class="detail-label">Status</span>
+                <span class="detail-value">Seeking Internship Opportunities</span>
+              </div>
+            </div>
+            <div class="detail-item">
+              <span class="detail-icon">🎯</span>
+              <div>
+                <span class="detail-label">Focus</span>
+                <span class="detail-value">Java Backend & Web Development</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-actions">
+            <a href="https://github.com/Risabsingh1240" target="_blank" class="btn btn-primary">
+              GitHub Profile
+            </a>
+            <a href="https://www.linkedin.com/in/risab-kumar-1b6067382" target="_blank" class="btn btn-ghost">
+              LinkedIn
+            </a>
+          </div>
+        </div>
+        <div class="about-code">
+          <div class="code-window">
+            <div class="code-titlebar">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="code-filename">RisabSingh.java</span>
+            </div>
+            <pre class="code-body"><code><span class="c-keyword">public class</span> <span class="c-class">RisabSingh</span> {
+
+  <span class="c-type">String</span> degree   = <span class="c-str">"BCA Student"</span>;
+  <span class="c-type">String</span> focus    = <span class="c-str">"Software Dev"</span>;
+  <span class="c-type">String</span> location = <span class="c-str">"India 🇮🇳"</span>;
+  <span class="c-type">boolean</span> openTo  = <span class="c-bool">true</span>;
+
+  <span class="c-type">String</span>[] loves = {
+    <span class="c-str">"Java"</span>,
+    <span class="c-str">"Web Development"</span>,
+    <span class="c-str">"Open Source"</span>,
+    <span class="c-str">"Problem Solving"</span>
+  };
+
+  <span class="c-type">void</span> <span class="c-fn">currentGoal</span>() {
+    System.out.println(
+      <span class="c-str">"Land my first internship!"</span>
+    );
+  }
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SKILLS
+  ══════════════════════════════════════════ -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">What I Work With</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card" data-skill="Java">
+          <div class="skill-icon-wrap">
+            <svg viewBox="0 0 128 128" class="skill-svg"><path fill="#ea6c00" d="M47.617 98.12s-4.767 2.774 3.397 3.71c9.892 1.13 14.947.968 25.845-1.092 0 0 2.871 1.795 6.873 3.351-24.439 10.47-55.308-.607-36.115-5.969zm-2.988-13.665s-5.348 3.959 2.823 4.805c10.567 1.091 18.91 1.18 33.354-1.6 0 0 1.993 2.025 5.132 3.131-29.542 8.64-62.446.68-41.309-6.336z"/><path fill="#f58219" d="M69.802 61.271c6.025 6.935-1.58 13.17-1.58 13.17s15.289-7.891 8.269-17.777c-6.559-9.215-11.587-13.792 15.635-29.58 0 .001-42.731 10.67-22.324 34.187z"/><path fill="#ea6c00" d="M102.123 108.229s3.529 2.91-3.888 5.159c-14.102 4.272-58.706 5.56-71.094.171-4.451-1.938 3.899-4.625 6.526-5.192 2.739-.593 4.303-.485 4.303-.485-4.953-3.487-32.013 6.85-13.743 9.815 49.821 8.076 90.817-3.637 77.896-9.468zM49.912 70.294s-22.686 5.389-8.033 7.348c6.188.828 18.518.638 30.011-.326 9.386-.793 18.807-2.48 18.807-2.48s-3.312 1.421-5.704 3.066c-23.042 6.061-67.544 3.238-54.731-2.976 10.832-5.237 19.65-4.632 19.65-4.632zm40.623 22.748c23.421-12.167 12.591-23.86 5.032-22.285-1.848.385-2.677.72-2.677.72s.688-1.079 2-1.543c14.953-5.255 26.451 15.503-4.823 23.725 0-.002.359-.327.468-.617z"/><path fill="#f58219" d="M76.491 1.587S89.459 14.563 64.188 34.51c-20.266 16.006-4.621 25.13-.007 35.559-11.831-10.673-20.509-20.07-14.688-28.815C58.041 28.42 81.722 22.195 76.491 1.587z"/><path fill="#ea6c00" d="M52.214 126.021c22.476 1.437 57-.8 57.817-11.436 0 0-1.571 4.032-18.597 7.231-19.186 3.612-42.854 3.191-56.887.874 0 .001 2.875 2.381 17.667 3.331z"/></svg>
+          </div>
+          <h3 class="skill-name">Java</h3>
+          <p class="skill-desc">OOP, Collections, DSA</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+
+        <div class="skill-card" data-skill="HTML5">
+          <div class="skill-icon-wrap">
+            <svg viewBox="0 0 128 128" class="skill-svg"><path fill="#E44D26" d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"/><path fill="#F16529" d="M64 116.8l36.378-10.086 8.559-95.878H64z"/><path fill="#EBEBEB" d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z"/><path fill="#fff" d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z"/></svg>
+          </div>
+          <h3 class="skill-name">HTML5</h3>
+          <p class="skill-desc">Semantic, Accessible</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+
+        <div class="skill-card" data-skill="CSS3">
+          <div class="skill-icon-wrap">
+            <svg viewBox="0 0 128 128" class="skill-svg"><path fill="#1572B6" d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"/><path fill="#33A9DC" d="M64.001 117.538l36.559-10.126 8.601-96.354H64.001v106.48z"/><path fill="#fff" d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z"/><path fill="#EBEBEB" d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z"/><path fill="#fff" d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z"/><path fill="#EBEBEB" d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.994v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z"/></svg>
+          </div>
+          <h3 class="skill-name">CSS3</h3>
+          <p class="skill-desc">Flexbox, Grid, Animations</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+        </div>
+
+        <div class="skill-card" data-skill="JavaScript">
+          <div class="skill-icon-wrap">
+            <svg viewBox="0 0 128 128" class="skill-svg"><path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z"/><path fill="#323330" d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.29 4.784-4.355 7.925-3.403 2.057.609 4.011 2.096 5.141 4.426 5.451-3.551 5.451-3.551 9.247-5.serbian 5.712-3.051 9.715.679 11.076 3.442 1.686 3.386 1.765 7.938.76 11.408-2.601 9.537-10.945 12.48-24.47 12.48H56.79c-12.438 0-21.478-5.096-25.21-14.945-2.179-5.783-2.053-13.343-.501-20.093 1.499-6.578 5.053-12.21 10.24-15.897 5.251-3.697 12.17-4.778 18.95-3.622 6.35 1.094 10.96 4.404 14.254 9.044l-8.966 5.719c-1.714-2.487-4.008-4.171-7.002-4.878-2.937-.68-5.934-.07-8.221 1.793-3.651 2.92-4.617 8.064-3.97 12.84.698 5.13 3.362 8.967 7.606 10.696 2.57 1.055 5.396 1.24 8.133.957h18.9c5.56 0 9.484-1.207 11.406-4.358.961-1.572 1.199-3.469.735-5.37-.594-2.372-2.412-3.995-4.915-4.604-2.387-.595-4.851.095-6.547 1.86-1.625 1.731-2.094 4.088-1.354 6.234.727 2.049 2.581 3.454 4.776 3.652l-1.386 7.842c-4.148.278-8.203-1.155-11.254-3.892-3.237-2.847-5.127-6.842-5.219-11.083-.098-4.37 1.631-8.663 4.854-11.823 3.286-3.145 7.768-4.827 12.489-4.657 5.063.174 9.737 2.24 13.146 5.862 3.422 3.606 5.248 8.486 5.033 13.586-.213 5.001-2.379 9.627-5.921 12.972-3.596 3.431-8.494 5.249-13.608 5.249H80.74c1.636 3.406 5.183 5.694 9.367 6.126l-.002.001z"/></svg>
+          </div>
+          <h3 class="skill-name">JavaScript</h3>
+          <p class="skill-desc">DOM, ES6+, Events</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+
+        <div class="skill-card" data-skill="SQL">
+          <div class="skill-icon-wrap">
+            <div class="skill-icon-fallback sql">SQL</div>
+          </div>
+          <h3 class="skill-name">MySQL / SQL</h3>
+          <p class="skill-desc">CRUD, Normalization, Joins</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+        </div>
+
+        <div class="skill-card" data-skill="Git">
+          <div class="skill-icon-wrap">
+            <svg viewBox="0 0 128 128" class="skill-svg"><path fill="#F34F29" d="M124.742 58.378L69.625 3.264c-3.172-3.174-8.32-3.174-11.497 0L46.685 14.71l14.518 14.518c3.375-1.139 7.243-.375 9.932 2.314 2.703 2.706 3.461 6.607 2.294 9.993l13.992 13.993c3.385-1.167 7.292-.413 9.994 2.295 3.78 3.777 3.78 9.9 0 13.679a9.673 9.673 0 01-13.683 0 9.677 9.677 0 01-2.105-10.521L68.574 47.933l-.002 34.341a9.708 9.708 0 012.559 1.828c3.778 3.777 3.778 9.898 0 13.683-3.779 3.777-9.904 3.777-13.679 0-3.778-3.784-3.778-9.905 0-13.683a9.65 9.65 0 013.167-2.11V47.333a9.581 9.581 0 01-3.167-2.111c-2.862-2.86-3.551-7.06-2.083-10.576L41.056 20.333 3.264 58.123a8.133 8.133 0 000 11.5l55.117 55.114c3.174 3.174 8.32 3.174 11.499 0l54.858-54.858a8.135 8.135 0 00.004-11.501z"/></svg>
+          </div>
+          <h3 class="skill-name">Git</h3>
+          <p class="skill-desc">Version Control, Branching</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+        </div>
+
+        <div class="skill-card" data-skill="GitHub">
+          <div class="skill-icon-wrap">
+            <svg viewBox="0 0 128 128" class="skill-svg"><path fill="#fff" d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z"/></svg>
+          </div>
+          <h3 class="skill-name">GitHub</h3>
+          <p class="skill-desc">Repos, PRs, Collaboration</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="74"></div></div>
+        </div>
+
+        <div class="skill-card" data-skill="OOP">
+          <div class="skill-icon-wrap">
+            <div class="skill-icon-fallback oop">OOP</div>
+          </div>
+          <h3 class="skill-name">OOP & DSA</h3>
+          <p class="skill-desc">Patterns, Algorithms</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       PROJECTS
+  ══════════════════════════════════════════ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">What I've Built</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">📚</div>
+            <div class="project-links">
+              <a href="https://github.com/Risabsingh1240" target="_blank" class="project-link" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Online Book Store Management</h3>
+          <p class="project-desc">A complete book store management application with browsing, searching, and inventory management features. Implements CRUD operations with a relational database backend.</p>
+          <div class="project-tags">
+            <span class="tag">Java</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">OOP</span>
+            <span class="tag">JDBC</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-status status-soon">🚧 Coming Soon</span>
+          </div>
+        </div>
+
+        <div class="project-card featured">
+          <div class="featured-badge">Featured</div>
+          <div class="project-header">
+            <div class="project-icon">🎓</div>
+            <div class="project-links">
+              <a href="https://github.com/Risabsingh1240" target="_blank" class="project-link" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Student Management System</h3>
+          <p class="project-desc">A full-featured CRUD application to manage student records, enrollments, and academic data. Features search, add, update, and delete operations with a clean database schema.</p>
+          <div class="project-tags">
+            <span class="tag">Java</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">CRUD</span>
+            <span class="tag">JDBC</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-status status-soon">🚧 Coming Soon</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">📖</div>
+            <div class="project-links">
+              <a href="https://github.com/Risabsingh1240" target="_blank" class="project-link" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Library Management System</h3>
+          <p class="project-desc">A library system handling book issuance, returns, and member records. Core OOP principles applied with a normalized database schema and efficient query design.</p>
+          <div class="project-tags">
+            <span class="tag">Java</span>
+            <span class="tag">OOP</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">JDBC</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-status status-soon">🚧 Coming Soon</span>
+          </div>
+        </div>
+
+        <div class="project-card featured">
+          <div class="featured-badge">Live</div>
+          <div class="project-header">
+            <div class="project-icon">🌐</div>
+            <div class="project-links">
+              <a href="https://github.com/Risabsingh1240/portfolio" target="_blank" class="project-link" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              </a>
+              <a href="https://risabsingh1240.github.io/portfolio" target="_blank" class="project-link" title="Live Demo">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Portfolio Website</h3>
+          <p class="project-desc">A modern, responsive personal portfolio with dark theme, glassmorphism effects, and smooth animations. Built entirely with vanilla HTML, CSS, and JavaScript — no frameworks.</p>
+          <div class="project-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Responsive</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://risabsingh1240.github.io/portfolio" target="_blank" class="project-live-btn">
+              View Live →
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       EDUCATION
+  ══════════════════════════════════════════ -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Academic Background</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="edu-timeline">
+        <div class="edu-card active">
+          <div class="edu-dot"></div>
+          <div class="edu-content">
+            <div class="edu-period">2025 — Present</div>
+            <h3 class="edu-degree">Bachelor of Computer Applications (BCA)</h3>
+            <p class="edu-institution">Currently Pursuing</p>
+            <p class="edu-desc">Focused on core computer science fundamentals — Data Structures, Algorithms, Database Management, and Object-Oriented Programming, .</p>
+            <div class="edu-subjects">
+                 <span class="edu-tag">C</span>
+              <span class="edu-tag">Java Programming</span>
+              <span class="edu-tag">Oops java</span>
+              <span class="edu-tag">DBMS</span>
+              <span class="edu-tag">Web Technologies</span>
+        
+              <span class="edu-tag">Operating Systems</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GitHub Stats -->
+      <div class="github-stats-section">
+        <h3 class="stats-title">GitHub Activity</h3>
+        <div class="github-stats-grid">
+          <img src="https://github-readme-stats.vercel.app/api?username=Risabsingh1240&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a855f7&icon_color=6366f1&text_color=c9d1d9" alt="GitHub Stats" class="github-stat-img" loading="lazy" />
+          <img src="https://github-readme-streak-stats.herokuapp.com/?user=Risabsingh1240&theme=tokyonight&hide_border=true&background=0d1117&stroke=a855f7&ring=6366f1&fire=f59e0b&currStreakLabel=a855f7" alt="GitHub Streak" class="github-stat-img" loading="lazy" />
+        </div>
+        <div class="github-langs-wrap">
+          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Risabsingh1240&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a855f7&text_color=c9d1d9" alt="Top Languages" class="github-stat-img langs" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       CONTACT
+  ══════════════════════════════════════════ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Let's Talk</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Open to internship opportunities, collaborations, and project feedback. Feel free to reach out!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div>
+              <p class="contact-label">Email</p>
+              <a href="mailto:singhrisab95@gmail.com" class="contact-value">singhrisab95@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">💼</div>
+            <div>
+              <p class="contact-label">LinkedIn</p>
+              <a href="https://www.linkedin.com/in/risab-kumar-1b6067382" target="_blank" class="contact-value">risab-kumar</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">💻</div>
+            <div>
+              <p class="contact-label">GitHub</p>
+              <a href="https://github.com/Risabsingh1240" target="_blank" class="contact-value">Risabsingh1240</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <p class="contact-label">Location</p>
+              <span class="contact-value">India 🇮🇳</span>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/Risabsingh1240" target="_blank" class="social-btn github">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/risab-kumar-1b6067382" target="_blank" class="social-btn linkedin">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Internship Opportunity" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Hi Risab, I'd like to discuss..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span id="btnText">Send Message</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+          <div class="form-note">* Form opens your email client</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="logo-bracket">&lt;</span>Risab<span class="logo-slash">/</span><span class="logo-bracket">&gt;</span>
+          </a>
+          <p>BCA Student & Aspiring Software Developer. Building the future, one commit at a time.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Connect</h4>
+          <a href="https://github.com/Risabsingh1240" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/risab-kumar-1b6067382" target="_blank">LinkedIn</a>
+          <a href="mailto:singhrisab95@gmail.com">Email</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Risab Kumar. Crafted with ❤️ using HTML, CSS & JavaScript.</p>
+        <a href="#home" class="back-to-top" id="backToTop">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="Script.js"></script>
+</body>
+</html>

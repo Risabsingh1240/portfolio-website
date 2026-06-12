@@ -1,6 +1,6 @@
 ## 🌐 Portfolio
 Visit My Portfolio:
-https://github.com/Risabsingh1240/portfolio-website
+https://risabsingh1240.github.io/portfolio-website/
 
 My personal portfolio website built using HTML, CSS, and JavaScript.
 
